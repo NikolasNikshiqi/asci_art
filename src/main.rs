@@ -25,7 +25,7 @@ fn main() {
     //Get terminal dimensions
     let (term_height, term_width) = match termsize::get() {
         Some(Size { rows, cols }) => {
-            println!("{} {}",rows,cols);
+            //println!("{} {}",rows,cols);
             (rows as u32, cols as u32)
         }
         _ => (100, 100),
